@@ -66,22 +66,45 @@ header .school-quote .yellow-text {
   color: #ffde59;
 }
 
-body .programs-text {
+main .programs-text {
   font-size: 3rem;
   color: #0e20b9;
   font-weight: bold;
 }
-body .rounded-circle {
+main .rounded-circle {
   width: 150px;
   height: 150px;
   background-color: #4285F4;
   margin-bottom: 1rem;
 }
-body .programs-icon {
+main .programs-icon {
   width: 5rem;
 }
-body .programs {
+main .programs {
   color: #0e20b9;
   width: 10rem;
+  text-align: center;
+}
+main .authors-container {
+  background-color: #4285F4;
+}
+main .author {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+main .authors-text {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+main .author-img {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .author-information {
   text-align: center;
 }/*# sourceMappingURL=exact_portfolio.css.map */

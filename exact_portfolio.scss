@@ -110,6 +110,33 @@ main{
         width: 10rem;
         text-align: center;
     }
+
+    .authors-container{
+        background-color: $light-blue-theme;
+    }
+
+    .author{
+        width: max-content;
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 1rem;
+    }
+
+    .authors-text{
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .author-img{
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .author-information{
+        text-align: center;
+    }
 }
 
 footer{
