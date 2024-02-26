@@ -85,26 +85,54 @@ main .programs {
   width: 10rem;
   text-align: center;
 }
-main .authors-container {
-  background-color: #4285F4;
+main .authors-list {
+  overflow: hidden;
 }
 main .author {
-  width: -moz-max-content;
-  width: max-content;
+  width: 300px;
   background-color: white;
   border-radius: 10px;
-  margin-right: 1rem;
+  margin-right: 2rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 main .authors-text {
   font-size: 3rem;
-  color: white;
+  color: #0e20b9;
   font-weight: bold;
+}
+main .author-information {
+  width: fit-content;
+  color: #4285F4;
 }
 main .author-img {
   width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-main .author-information {
-  text-align: center;
+
+footer {
+  background-color: #4285F4;
+  height: 30%;
+}
+footer .logo-container {
+  position: relative;
+}
+footer .logo-container .copyright-text {
+  color: white;
+}
+footer .logo-container #exact-text {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+footer .logo-container #copyright-text {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+footer .contact-container .contact-texts:nth-child(1) {
+  font-size: 2rem;
+}
+footer .contact-container .contact-texts {
+  color: white;
 }/*# sourceMappingURL=exact_portfolio.css.map */

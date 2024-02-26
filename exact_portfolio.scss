@@ -111,21 +111,28 @@ main{
         text-align: center;
     }
 
-    .authors-container{
-        background-color: $light-blue-theme;
+    .authors-list{
+        overflow: hidden;
     }
 
     .author{
-        width: max-content;
+        width: 300px;
         background-color: white;
         border-radius: 10px;
-        margin-right: 1rem;
+        margin-right: 2rem;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        
     }
 
     .authors-text{
         font-size: 3rem;
-        color: white;
+        color: $dark-blue-theme;
         font-weight: bold;
+    }
+
+    .author-information{
+        width: fit-content;
+        color: $light-blue-theme;
     }
 
     .author-img{
@@ -134,12 +141,40 @@ main{
         border-top-right-radius: 10px;
     }
 
-    .author-information{
-        text-align: center;
-    }
 }
 
 footer{
+    background-color: $light-blue-theme;
+    height: 30%;
 
+    .logo-container{
+        position: relative;
+
+        .copyright-text{
+            color: white;
+        }
+
+        #exact-text{
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+        }
+
+        #copyright-text{
+            position: absolute;
+            left: 2rem;
+            bottom: 1rem;
+        }
+    }
+
+    .contact-container{
+
+        .contact-texts:nth-child(1){
+            font-size: 2rem;
+        }
+        .contact-texts{
+            color: white;
+        }
+    }
 }
 
