@@ -66,50 +66,6 @@ header .school-quote .yellow-text {
   color: #ffde59;
 }
 
-main .programs-text {
-  font-size: 3rem;
-  color: #0e20b9;
-  font-weight: bold;
-}
-main .rounded-circle {
-  width: 150px;
-  height: 150px;
-  background-color: #4285F4;
-  margin-bottom: 1rem;
-}
-main .programs-icon {
-  width: 5rem;
-}
-main .programs {
-  color: #0e20b9;
-  width: 10rem;
-  text-align: center;
-}
-main .authors-list {
-  overflow: visible;
-}
-main .author {
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
-  margin-right: 2rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
-main .authors-text {
-  font-size: 3rem;
-  color: #0e20b9;
-  font-weight: bold;
-}
-main .author-information {
-  width: fit-content;
-  color: #4285F4;
-}
-main .author-img {
-  width: 300px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
 footer {
   background-color: #4285F4;
   height: 30%;
@@ -135,4 +91,4 @@ footer .contact-container .contact-texts:nth-child(1) {
 }
 footer .contact-container .contact-texts {
   color: white;
-}/*# sourceMappingURL=exact_portfolio.css.map */
+}/*# sourceMappingURL=exact_porftolio_programs.css.map */
