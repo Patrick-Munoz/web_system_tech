@@ -1,0 +1,109 @@
+$grey: #8E8D93;
+$light-grey: #F1F2F4;
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("../assets/fonts/montserrat/Montserrat-Bold.otf");
+}
+
+
+*{
+    list-style: none;
+}
+
+.page-container{
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.author-1{
+    background-image: url(../assets/images/author.png);
+    background-size: 40%;
+}
+
+.author-1{
+    background-image: url(../assets/images/author.png);
+    background-size: 40%;
+}
+
+.author-2{
+    background-image: url(../assets/images/author-2.jpg);
+    background-size: 40%;
+}
+
+.author-3{
+    background-image: url(../assets/images/author-3.png);
+    background-size: 50%;
+}
+
+
+.author-4{
+    background-image: url(../assets/images/author-4.png);
+    background-size: 35%;
+}
+
+
+.author-5{
+    background-image: url(../assets/images/author-5.png);
+    background-size: 40%;
+    background-position: bottom right;
+}
+
+.author-6{
+    background-image: url(../assets/images/author-6.png);
+    background-size: 20%;
+    background-position: right;
+}
+
+.light-grey-background{
+    background-color: $light-grey;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.black-color{
+    font-family: "montserrat-bold";
+    font-size: 3rem;
+}
+
+.grey-color{
+    color: $grey;
+    font-size: 2rem;
+}
+
+.name{
+    font-size: 5rem;
+}
+
+.skill-lists{
+    display: flex;
+}
+
+.contact-information li a{
+    text-decoration: none;
+    color:#8E8D93;
+}
+
+ul{
+    padding: 0;
+}
+
+.right-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-me{
+    width: 50%;
+    padding-left: 1rem;
+    border-left: solid 1px $grey;
+}
