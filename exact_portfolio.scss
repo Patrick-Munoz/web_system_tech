@@ -34,28 +34,6 @@ header{
         background-color: rgba($color: #000000, $alpha: 0.25);
     }    
 
-    .navbar{
-        background-color: rgba($color: #000000, $alpha: 0.19);
-       }
-
-    .navbar-brand{
-        background-image: url("../assets/images/exact-logo.png");
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center;
-        height: 100px;
-        width: 20%;
-    
-        @media (max-width: 768.00px){
-            width: 35%;
-        }
-    }
-
-    #apply-button{
-        background-color: $light-blue-theme;
-        color: white;
-    }
-
     .school-quote{
         .text{
             color: white;
@@ -112,7 +90,7 @@ main{
     }
 
     .authors-list{
-        overflow: hidden;
+        overflow:auto;
     }
 
     .author{
@@ -141,79 +119,4 @@ main{
         border-top-right-radius: 10px;
     }
 
-    .slider{
-        overflow: hidden;
-    }
-
-    .slider-track{
-        animation: scroll 40% linear infinite;
-    }
-
-    .slide::before, .slider::after{
-        background: linear-gradient(to right, rgba(255,255,255,1) 0%
-        rgba(255,255,255,0) 100%);
-        content: '';
-        height: 100%;
-        position:absolute;
-        width: 15%;
-        z-index: 2;
-    }
-
-    .slide::before{
-        left: 0;
-        top: 0;
-    }
-
-    .slide:after{
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
-
-    @keyframes scroll {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(calc(-250px * 9));
-        }
-    }
-
-
 }
-
-footer{
-    background-color: $light-blue-theme;
-    height: 30%;
-
-    .logo-container{
-        position: relative;
-
-        .copyright-text{
-            color: white;
-        }
-
-        #exact-text{
-            position: absolute;
-            left: 2rem;
-            bottom: 2rem;
-        }
-
-        #copyright-text{
-            position: absolute;
-            left: 2rem;
-            bottom: 1rem;
-        }
-    }
-
-    .contact-container{
-
-        .contact-texts:nth-child(1){
-            font-size: 2rem;
-        }
-        .contact-texts{
-            color: white;
-        }
-    }
-}
-

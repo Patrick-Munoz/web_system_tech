@@ -21,63 +21,8 @@ html,body{
     height: 100%;
 }
 
-.navbar{
-    background-color: $dark-blue-theme;
-   }
-
-.navbar-brand{
-    background-image: url("../assets/images/exact-logo.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 100px;
-    width: 20%;
-
-    @media (max-width: 768.00px){
-        width: 35%;
-    }
-}
-        
-
 main{
     img{
         width: 70%;
     }
 }
-
-
-footer{
-    background-color: $light-blue-theme;
-    height: 30%;
-
-    .logo-container{
-        position: relative;
-
-        .copyright-text{
-            color: white;
-        }
-
-        #exact-text{
-            position: absolute;
-            left: 2rem;
-            bottom: 2rem;
-        }
-
-        #copyright-text{
-            position: absolute;
-            left: 2rem;
-            bottom: 1rem;
-        }
-    }
-
-    .contact-container{
-
-        .contact-texts:nth-child(1){
-            font-size: 2rem;
-        }
-        .contact-texts{
-            color: white;
-        }
-    }
-}
-
