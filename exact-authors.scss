@@ -16,10 +16,17 @@ $light-grey: #F1F2F4;
     list-style: none;
 }
 
+body{
+    width: 100%;
+    overflow: auto;
+}
+
 .page-container{
-    padding-left: 3rem;
+    padding-left: 1rem;
     background-repeat: no-repeat;
     background-position: right;
+    width: fit-content;
+    
 }
 
 .author-1{
@@ -30,6 +37,7 @@ $light-grey: #F1F2F4;
 .author-1{
     background-image: url(../assets/images/author.png);
     background-size: 40%;
+    
 }
 
 .author-2{
@@ -57,12 +65,13 @@ $light-grey: #F1F2F4;
 
 .author-6{
     background-image: url(../assets/images/author-6.png);
-    background-size: 20%;
-    background-position: right;
+    background-size: 30%;
+    background-position: 1250px;
 }
 
 .light-grey-background{
     background-color: $light-grey;
+    
 }
 
 .left-container{

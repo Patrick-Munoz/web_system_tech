@@ -89,8 +89,22 @@ main{
         text-align: center;
     }
 
+
+    /*-------SLIDER ANIMATION---------*/
+
     .authors-list{
-        overflow:auto;
+        margin-left: -100px;
+        position: relative;
+        animation: slide_animation 5s infinite;
+    }
+
+    @keyframes slide_animation{
+        0% {transform: translateX(500);}  
+        20% {transform: translateX(100px);}
+        40% {transform: translateX(200px);}
+        60% {transform: translateX(300px);}
+        80% {transform: translateX(400px);}
+        100% {transform: translateX(100);}
     }
 
     .author{
@@ -100,6 +114,10 @@ main{
         margin-right: 2rem;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
         
+    }
+
+    .authors-container{
+        overflow: hidden;
     }
 
     .authors-text{
