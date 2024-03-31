@@ -46,6 +46,9 @@ header .school-quote .yellow-text {
   color: #ffde59;
 }
 
+main {
+  /*-------SLIDER ANIMATION---------*/
+}
 main .programs-text {
   font-size: 3rem;
   color: #0e20b9;
@@ -65,15 +68,48 @@ main .programs {
   width: 10rem;
   text-align: center;
 }
+@keyframes slide_animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
 main .authors-list {
-  overflow: auto;
+  overflow: visible;
+  height: 280px;
+  width: 200px;
+  top: -20px;
+  position: relative;
+  left: 820px;
+  animation: slide_animation 25s linear infinite;
+  margin-bottom: 50px;
+}
+main .author:not(:first-child) {
+  margin-left: -29px;
+}
+main .author:hover {
+  transform: translateY(-30px);
+  transition: 0.9s ease-out;
+}
+main .author:hover ~ .author {
+  position: relative;
+  left: 25px;
+  transition: 0.9s ease-out;
+}
+main .authors-container {
+  overflow: hidden;
 }
 main .author {
-  width: 300px;
+  width: 500px;
   background-color: white;
   border-radius: 10px;
-  margin-right: 2rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 3rem;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #17141d;
+  transition: 0.9s ease-out;
 }
 main .authors-text {
   font-size: 3rem;
@@ -83,6 +119,7 @@ main .authors-text {
 main .author-information {
   width: fit-content;
   color: #4285F4;
+  font-weight: bolder;
 }
 main .author-img {
   width: 300px;
