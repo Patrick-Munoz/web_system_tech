@@ -91,69 +91,68 @@ main{
 
     /*-------SLIDER ANIMATION---------*/
 
-
-    @keyframes slide_animation{
-        0% {transform: translateX(0);}  
-        100% {transform: translateX(calc(-100px * 8));}
+    @keyframes slide_animation {
+        100% {
+            transform: translateX(calc(-150px * 12));
+        }
     }
-
-
-    .authors-list{
-        overflow: visible;
-        height: 280px;
-        width: 200px;
-        top: -20px;
-        position: relative;
-        left: 820px;
-        animation: slide_animation 25s linear infinite ;
-        margin-bottom: 50px;
+    
+    .authors-list {
+        overflow: hidden;
     }
+    
+    .author {
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 3rem;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #17141d;
+        transition: 0.9s ease-out;
+    }
+    
+    .author-img {
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    /* Pause the animation on hover */
+    .authors-list:hover .author {
+        animation-play-state: paused;
+    }
+    
+    /* Resume the animation when not hovering */
+    .authors-list:not(:hover) .author {
+        animation: slide_animation 20s linear infinite;
+    }
+    
     .author:not(:first-child) {
         margin-left: -29px;
     }
     
     .author:hover {
-      transform: translateY(-30px);
-      transition: 0.9s ease-out;
+        transform: translateY(-30px);
+        transition: 0.9s ease-out;
     }
     
     .author:hover ~ .author {
-      position: relative;
-      left: 25px;
-      transition: 0.9s ease-out;
-    }
-
-    .authors-container{
-        overflow: hidden;
-    }
-
-    .author{
-        width: 500px;
-        background-color: white;
-        border-radius: 10px;
-        margin-right: 3rem;
-        background-color: #17141d;
-        border-radius: 10px;
-        box-shadow: -1rem 0 3rem #17141d;
+        position: relative;
+        left: 25px;
         transition: 0.9s ease-out;
     }
-
-    .authors-text{
+    
+    .authors-text {
         font-size: 3rem;
         color: $dark-blue-theme;
         font-weight: bold;
     }
-
-    .author-information{
+    
+    .author-information {
         width: fit-content;
         color: $light-blue-theme;
         font-weight: bolder;
     }
-
-    .author-img{
-        width: 300px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
+    
 
 }
