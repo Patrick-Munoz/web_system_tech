@@ -1,5 +1,5 @@
-$grey: #8E8D93;
-$light-grey: #F1F2F4;
+$grey: #8e8d93;
+$light-grey: #f1f2f4;
 
 @font-face {
     font-family: "montserrat";
@@ -11,107 +11,101 @@ $light-grey: #F1F2F4;
     src: url("../assets/fonts/montserrat/Montserrat-Bold.otf");
 }
 
-
-*{
+* {
     list-style: none;
 }
 
-body{
+body {
     width: 100%;
     overflow: auto;
 }
 
-.page-container{
+.page-container {
     padding-left: 1rem;
     background-repeat: no-repeat;
     background-position: right;
     width: fit-content;
-    
 }
 
-.author-1{
+.author-1 {
     background-image: url(../assets/images/author.png);
     background-size: 40%;
 }
 
-.author-1{
+.author-1 {
     background-image: url(../assets/images/author.png);
     background-size: 40%;
-    
 }
 
-.author-2{
+.author-2 {
     background-image: url(../assets/images/author-2.jpg);
     background-size: 40%;
 }
 
-.author-3{
+.author-3 {
     background-image: url(../assets/images/author-3.png);
     background-size: 50%;
 }
 
-
-.author-4{
+.author-4 {
     background-image: url(../assets/images/author-4.png);
     background-size: 35%;
 }
 
-
-.author-5{
+.author-5 {
     background-image: url(../assets/images/author-5.png);
     background-size: 40%;
     background-position: bottom right;
 }
 
-.author-6{
+.author-6 {
     background-image: url(../assets/images/author-6.png);
     background-size: 30%;
     background-position: 1250px;
 }
 
-.light-grey-background{
+.light-grey-background {
     background-color: $light-grey;
-    
 }
 
-.left-container{
+.left-container {
     display: flex;
     flex-direction: column;
 }
 
-.black-color{
+.black-color {
     font-family: "montserrat-bold";
     font-size: 3rem;
 }
 
-.grey-color{
+.grey-color {
     color: $grey;
     font-size: 2rem;
 }
 
-.name{
+.name {
     font-size: 5rem;
 }
 
-.skill-lists{
+.skill-lists {
     display: flex;
 }
 
-.contact-information li a{
+.contact-information li a {
     text-decoration: none;
-    color:#8E8D93;
+    color: #8e8d93;
 }
 
-ul{
+ul {
     padding: 0;
 }
 
-.right-container{
+.right-container {
     display: flex;
     align-items: center;
 }
 
-.about-me{
+.about-me {
     width: 50%;
     padding-left: 1rem;
     border-left: solid 1px $grey;

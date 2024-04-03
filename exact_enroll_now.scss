@@ -1,5 +1,5 @@
 //Color Themes
-$light-blue-theme: #4285F4;
+$light-blue-theme: #4285f4;
 $light-yellow-theme: #ffde59;
 $dark-blue-theme: #0e20b9;
 
@@ -10,45 +10,45 @@ $dark-blue-theme: #0e20b9;
 }
 
 //Designs
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "montserrat";
     list-style-type: none;
 }
 
-
-html,body{
+html,
+body {
     height: 100%;
 }
 
-main{
+main {
     position: relative;
     top: 4%;
-    img{
+    img {
         width: 70%;
-        box-shadow: -.8rem .5rem 3rem rgba($color: black, $alpha: 20%);
+        box-shadow: -0.8rem 0.5rem 3rem rgba($color: black, $alpha: 20%);
     }
 
-    .title{
+    .title {
         color: $light-blue-theme;
         font-weight: bold;
         font-size: 2rem;
     }
 
-    ul{
+    ul {
         padding: 2rem 1rem 2rem 1rem;
-        box-shadow: -.5rem .5rem 3rem rgba($color: black, $alpha: 15%);
+        box-shadow: -0.5rem 0.5rem 3rem rgba($color: black, $alpha: 15%);
     }
 
-    li{
+    li {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .divider{
+    .divider {
         border-style: solid;
         border-width: 1px;
         width: 70%;
@@ -56,21 +56,21 @@ main{
         opacity: 5%;
     }
 
-    .application-type-text{
+    .application-type-text {
         width: fit-content;
         margin-top: 1rem;
         color: $light-blue-theme;
     }
 
-    .button{
+    .button {
         padding: 1rem;
         border-radius: 10px;
         background-color: $dark-blue-theme;
         border-style: none;
-        box-shadow: -.5rem .5rem 3rem rgba($color: black, $alpha: 15%);
+        box-shadow: -0.5rem 0.5rem 3rem rgba($color: black, $alpha: 15%);
     }
 
-    .button a{
+    .button a {
         color: $light-yellow-theme;
         text-decoration: none;
     }

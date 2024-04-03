@@ -1,5 +1,5 @@
 //Color Themes
-$light-blue-theme: #4285F4;
+$light-blue-theme: #4285f4;
 $light-yellow-theme: #ffde59;
 $dark-blue-theme: #0e20b9;
 
@@ -9,59 +9,58 @@ $dark-blue-theme: #0e20b9;
     src: url("../assets/fonts/Montserrat-Regular.otf");
 }
 
-.navbar{
+.navbar {
     background-color: $dark-blue-theme;
-    }
+}
 
-.navbar-brand{
+.navbar-brand {
     background-image: url("../assets/images/exact-logo.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     height: 100px;
     width: 20%;
 
-    @media (max-width: 768.00px){
+    @media (max-width: 768px) {
         width: 35%;
     }
 }
 
-#apply-button{
+#apply-button {
     background-color: $light-blue-theme;
     color: white;
 }
 
-footer{
+footer {
     background-color: $dark-blue-theme;
     height: 30%;
     width: 100%;
 
-    .logo-container{
+    .logo-container {
         position: relative;
 
-        .copyright-text{
+        .copyright-text {
             color: white;
         }
 
-        #exact-text{
+        #exact-text {
             position: absolute;
             left: 2rem;
             bottom: 2rem;
         }
 
-        #copyright-text{
+        #copyright-text {
             position: absolute;
             left: 2rem;
             bottom: 1rem;
         }
     }
 
-    .contact-container{
-
-        .contact-texts:nth-child(1){
+    .contact-container {
+        .contact-texts:nth-child(1) {
             font-size: 2rem;
         }
-        .contact-texts{
+        .contact-texts {
             color: white;
         }
     }

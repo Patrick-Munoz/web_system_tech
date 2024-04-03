@@ -1,5 +1,5 @@
 //Color Themes
-$light-blue-theme: #4285F4;
+$light-blue-theme: #4285f4;
 $light-yellow-theme: #ffde59;
 $dark-blue-theme: #0e20b9;
 
@@ -10,80 +10,79 @@ $dark-blue-theme: #0e20b9;
 }
 
 //Designs
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "montserrat";
     list-style-type: none;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-header{
+header {
     background-image: url("../assets/images/exact.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     height: 80%;
 
-    .dark-bg{
+    .dark-bg {
         height: 100%;
         width: 100%;
         background-color: rgba($color: #000000, $alpha: 0.25);
-    }    
+    }
 
-    .school-quote{
-        .text{
+    .school-quote {
+        .text {
             color: white;
             font-weight: bold;
             font-size: 4rem;
         }
-    
-        .text:nth-child(1){
+
+        .text:nth-child(1) {
             margin-left: 2rem;
         }
 
-        .text:nth-child(2){
+        .text:nth-child(2) {
             margin-left: 4rem;
         }
 
-        .text:nth-child(3){
+        .text:nth-child(3) {
             margin-left: 6rem;
         }
 
-        .yellow-text:nth-child(4){
+        .yellow-text:nth-child(4) {
             margin-left: 5rem;
         }
 
-        .yellow-text{
+        .yellow-text {
             color: $light-yellow-theme;
         }
     }
-    
 }
 
-main{
-    .programs-text{
+main {
+    .programs-text {
         font-size: 3rem;
         color: $dark-blue-theme;
         font-weight: bold;
     }
 
-
-    .rounded-circle{
+    .rounded-circle {
         width: 150px;
         height: 150px;
         background-color: $light-blue-theme;
         margin-bottom: 1rem;
     }
-    
-    .programs-icon{
+
+    .programs-icon {
         width: 5rem;
     }
 
-    .programs{
+    .programs {
         color: $dark-blue-theme;
         width: 10rem;
         text-align: center;
@@ -96,11 +95,11 @@ main{
             transform: translateX(calc(-150px * 12));
         }
     }
-    
+
     .authors-list {
         overflow: hidden;
     }
-    
+
     .author {
         width: 500px;
         background-color: white;
@@ -110,49 +109,47 @@ main{
         box-shadow: -1rem 0 3rem #17141d;
         transition: 0.9s ease-out;
     }
-    
+
     .author-img {
         width: 300px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    
+
     /* Pause the animation on hover */
     .authors-list:hover .author {
         animation-play-state: paused;
     }
-    
+
     /* Resume the animation when not hovering */
     .authors-list:not(:hover) .author {
         animation: slide_animation 20s linear infinite;
     }
-    
+
     .author:not(:first-child) {
         margin-left: -29px;
     }
-    
+
     .author:hover {
         transform: translateY(-30px);
         transition: 0.9s ease-out;
     }
-    
+
     .author:hover ~ .author {
         position: relative;
         left: 25px;
         transition: 0.9s ease-out;
     }
-    
+
     .authors-text {
         font-size: 3rem;
         color: $dark-blue-theme;
         font-weight: bold;
     }
-    
+
     .author-information {
         width: fit-content;
         color: $light-blue-theme;
         font-weight: bolder;
     }
-    
-
 }
