@@ -36,16 +36,69 @@
   </nav>
 
   <main>
-    <div class="form-container">
+    <div class="form-container mt-5">
       <form action="" method="post">
-        <label for="student-id">Student Number</label>
-        <input type="number" name="student-id">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name">
-        <label for="Address">Address</label>
-        <input type="text" name="Address">
+        <div class="container row">
+          <div class="form-floating mb-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Student Number">
+            <label for="floatingInput">Student Number</label>
+          </div>
+          <div class="form-floating mb-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+            <label for="floatingInput">First Name</label>
+          </div>
+          <div class="form-floating mb-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Middle Name">
+            <label for="floatingInput">Middle Name</label>
+          </div>
+          <div class="form-floating mb-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+            <label for="floatingInput">Last Name</label>
+          </div>
+          <select class="form-select col" aria-label="Default select example">
+            <option selected>Suffix</option>
+            <option value="1">Jr</option>
+            <option value="2">Sr</option>
+            <option value="3">I</option>  
+            <option value="4">II</option>
+            <option value="5">III</option>
+            <option value="6">IV</option>
+            <option value="7">V</option>
+            <option value="8">VI</option>
+            <option value="9">VII</option>
+          </select>
+        </div>
+        <div class="container row">
+          <select class="form-select col" aria-label="Default select example">
+            <option selected>Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+          <div class="form-floating mb-3 col">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Contact Number">
+            <label for="floatingInput">Contact Number</label>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Country Code">
+          <label for="floatingInput">Country Code</label>
+        </div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Course</option>
+          <option value="1">BACHLER OF SCIENCE IN INFORMATION SYSTEM</option>
+          <option value="2">BACHLELOR OF SCIENCE IN MARITIME</option>
+          <option value="3">BACHLELOR OF SCIENCE IN MARINE ENGINEERING</option>  
+          <option value="4">BACHELOR OF SCIENCE IN CRIMINOLOGY</option>
+          <option value="5">BACHELOR OF SCIENCE IN TOURISM MANAGEMENT</option>
+          <option value="6">BACHELOR OF SCIENCE IN TECHNICAL VOCATIONAL TEACHER EDUCATION</option>
+          <option value="7">BACHELOR OF SCIENCE IN EARLY CHILDHOOD EDUCATION</option>
+          <option value="8">BACHELOR OF SCIENCE IN ENTREPRENEURSHIP</option>
+          <option value="9">BACHELOR OF SCIENCE IN MANAGEMENT ACCOUNTING</option>
+        </select>
       </form>
     </div>
   </main>
