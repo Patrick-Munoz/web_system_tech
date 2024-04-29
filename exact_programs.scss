@@ -1,4 +1,28 @@
+//Color Themes
+$light-blue-theme: #4285F4;
+$light-yellow-theme: #ffde59;
+$dark-blue-theme: #0e20b9;
+
+
 h1{
     font-weight: bolder;
 }
+.media-college{
+    display: flex;
+}
 
+.college-logo img{
+    border: 3px solid $light-blue-theme;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    transition: transform 0.7s ease;
+}
+
+.college-logo{
+    width: 140px;
+}
+
+.college-logo img:hover {
+    transform: scale(1.1);
+}
