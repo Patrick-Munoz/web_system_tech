@@ -9,6 +9,16 @@
   list-style-type: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 80%;
 }/*# sourceMappingURL=exact_forms.css.map */
