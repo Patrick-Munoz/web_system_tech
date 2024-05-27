@@ -72,4 +72,12 @@ body {
 
 li{
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.definition{
+    background-color: darkgrey;
+    color: white;
+    padding-left: .5rem;
 }
