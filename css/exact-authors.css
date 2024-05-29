@@ -54,25 +54,25 @@ body {
 }
 
 .author-2 {
-  background-image: url(../assets/images/author-2.jpg);
+  background-image: url(../assets/images/james.png);
   background-size: 30%;
   background-position: bottom right;
 }
 
 .author-3 {
-  background-image: url(../assets/images/author-3.png);
+  background-image: url(../assets/images/adriana.png);
   background-size: 30%;
   background-position: bottom right;
 }
 
 .author-4 {
-  background-image: url(../assets/images/author-4.png);
+  background-image: url(../assets/images/eisen.png);
   background-size: 25%;
   background-position: bottom right;
 }
 
 .author-5 {
-  background-image: url(../assets/images/author-5.png);
+  background-image: url(../assets/images/shane.png);
   background-size: 30%;
   background-position: bottom right;
 }
