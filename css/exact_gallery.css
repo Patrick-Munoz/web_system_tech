@@ -62,7 +62,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%; /* Adjust the width as needed to fit within the container */
+  width: 60%; /* Adjust the width as needed to fit within the container */
   height: auto; /* Maintain aspect ratio */
   transform: translate(-50%, -50%); /* Center the video */
   object-fit: cover;
