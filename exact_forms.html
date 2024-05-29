@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Exact Forms</title>
   <link rel="stylesheet" href="css/exact_forms.min.css">
   <link rel="stylesheet" href="css/nav_&_footer.min.css">
   <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-</head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+</head>
+<div id="dimmed-overlay" class="dimmed-overlay"></div>
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -38,7 +40,7 @@
   <main>
     <div class="form-container mt-3">
       <div class="text">Student Information</div>
-      <form action="" method="post">
+      <form id="student-form" action="" method="post">
         <input type="text" name="f-name" id="f-name" placeholder="First Name">
         <input type="text" name="m-name" id="m-name" placeholder="Middle Name">
         <input type="text" name="l-name" id="l-name" placeholder="Last Name">
@@ -51,22 +53,22 @@
           <option value="IV">IV (the Fourth)</option>
           <option value="Esq.">Esq. (Esquire)</option>
         </select>
-        <select name="gender" id="gender">
-          <option selected class="selected">Gender</option>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select>
-        <select id="civil-status" name="civil-status">
-          <option selected style="color: lightgrey;" class="selected">Civil Status</option>
+        <select id="civil-status" name="civil-status" required>
+          <option value="" style="color: lightgrey;" disabled selected>Civil Status</option>
           <option value="single">Single</option>
           <option value="married">Married</option>
           <option value="divorced">Divorced</option>
           <option value="widowed">Widowed</option>
           <option value="separated">Separated</option>
         </select>
-        <input type="number" id="dob-day" name="dob-day" min="1" max="31" placeholder="day" required>
+        <input type="number" id="dob-day" name="dob-day" min="1" max="31" placeholder="Day" required>
         <select id="dob-month" name="dob-month" required>
-            <option class="selected">-- Select Month --</option>
+            <option value="" disabled selected>Month</option>
             <option value="01">January</option>
             <option value="02">February</option>
             <option value="03">March</option>
@@ -80,9 +82,9 @@
             <option value="11">November</option>
             <option value="12">December</option>
         </select>
-        <input type="number" id="dob-year" name="dob-year" min="1900" max="2024" placeholder="year" required>
-        <select name="course" id="course">
-          <option selected class="selected">Course</option>
+        <input type="number" id="dob-year" name="dob-year" min="1900" max="2024" placeholder="Year" required>
+        <select name="course" id="course" required>
+          <option value="" disabled selected>Course</option>
           <option value="1">BACHLER OF SCIENCE IN INFORMATION SYSTEM</option>
           <option value="2">BACHLELOR OF SCIENCE IN MARITIME</option>
           <option value="3">BACHLELOR OF SCIENCE IN MARINE ENGINEERING</option>  
@@ -93,11 +95,21 @@
           <option value="8">BACHELOR OF SCIENCE IN ENTREPRENEURSHIP</option>
           <option value="9">BACHELOR OF SCIENCE IN MANAGEMENT ACCOUNTING</option>
         </select>
-        <input type="text" name="address" id="address" placeholder="Complete Address">
-        <input type="text" name="zip" id="zip" placeholder="XXXX">
-        <button type="submit" id="submit">Submit</button>
-      </form>
+        <input type="text" name="address" id="address" placeholder="Complete Address" required>
+        <input type="text" name="zip" id="zip" placeholder="ZIP code" required>
+        <button type="submit" id="submit" onclick="handleSubmit()"><span>Submit</span></button><!-- Pop-up for submission complete message -->
+        <div id="loading-icon" class="loading-icon hidden"></div>
+    </form>
+    <div id="submission-popup" class="popup"">
+      <p id="submission-message">Submission Complete!</p>
     </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please fill out all required fields.</p>
+      </div>
+    </div>    
   </main>
 
   <footer class="mt-5 d-flex justify-content-evenly align-items-center w-100">
@@ -116,6 +128,6 @@
   </footer>
 
   <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="exact_forms.js"></script>
 </body>
-
 </html>

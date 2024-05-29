@@ -39,16 +39,20 @@ footer .logo-container .copyright-text {
 footer .logo-container #exact-text {
   position: absolute;
   left: 2rem;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 footer .logo-container #copyright-text {
   position: absolute;
   left: 2rem;
-  bottom: 1rem;
+  bottom: 0rem;
 }
 footer .contact-container .contact-texts:nth-child(1) {
   font-size: 2rem;
 }
 footer .contact-container .contact-texts {
   color: white;
+}
+footer iframe {
+  width: 40%;
+  height: 90%;
 }/*# sourceMappingURL=nav_&_footer.css.map */
