@@ -11,6 +11,7 @@ $dark-blue-theme: #0e20b9;
 
 .navbar {
     background-color: $dark-blue-theme;
+
 }
 
 .navbar-brand {
@@ -35,6 +36,8 @@ footer {
     background-color: $dark-blue-theme;
     height: 30%;
     width: 100%;
+    position: relative;
+    bottom: 0;
 
     .logo-container {
         position: relative;
