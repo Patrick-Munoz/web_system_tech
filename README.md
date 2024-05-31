@@ -6,7 +6,8 @@ Website Deployment Status
 
 - ### **Automatic Picture Slider💯** 
 - ### **Pre Enrollment 🥳** 
-- ### **Multi Page 💎** 
+- ### **Multi Page 💎**
+- ### **Google Maps Integration 🗺️** 
 
 ## Technologies used 🛠️
 
